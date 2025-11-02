@@ -72,7 +72,7 @@ class InvitationController extends Controller
             'company_id' => 'required|integer|exists:companies,id',
         ]);
 
-        // 1️⃣ Create user
+        // Create user
         $user = User::create([
             'name'       => $request->name,
             'email'      => $request->email,
@@ -81,7 +81,7 @@ class InvitationController extends Controller
             'company_id' => $request->company_id,
         ]);
 
-        // 2️⃣ Create invitation
+        // Create invitation
         Invitation::create([
             'user_id'    => $user->id,
             'invited_by' => $authUser->id,

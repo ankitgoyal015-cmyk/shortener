@@ -18,14 +18,14 @@ class ShortUrlController extends Controller
                 ->get();
         }
 
-        // Admin - see URLs not from their own company
+        // Admin - see URLs from their own company
         if ($user->role->name === 'Admin') {
             return ShortUrl::with(['user','company'])
                 ->where('company_id','=',$user->company_id)
                 ->get();
         }
 
-        // Member - see URLs not created by themselves
+        // Member - see URLs created by themselves
         if ($user->role->name != 'SuperAdmin' && $user->role->name != 'Admin') {
             return ShortUrl::with(['user','company'])
                 ->where('user_id','=',$user->id)

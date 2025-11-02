@@ -16,7 +16,6 @@ class CompanyController extends Controller
     {
         $user = Auth::user();
 
-        // ✅ केवल SuperAdmin को company list दिखेगी
         if ($user->role->name !== 'SuperAdmin') {
             return response()->json([
                 'message' => 'Only SuperAdmin can view all companies.'

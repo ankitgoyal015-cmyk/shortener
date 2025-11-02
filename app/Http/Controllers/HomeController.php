@@ -16,7 +16,7 @@ class HomeController extends Controller
      */
     public function index(Request $request): View
     {
-        $user = Auth::user()->load('role', 'company'); // 👈 relation eager load
+        $user = Auth::user()->load('role', 'company'); 
         return view('dashboard', ['user' => $user]);
     }
 }
