@@ -58,7 +58,7 @@ Frontend Design	HTML / CSS / AngularJS
 🧩 Project Setup Guide
 1️⃣ Clone the Repository
 
-git clone https://github.com/yourusername/shortener.git
+git clone https://github.com/ankitgoyal015-cmyk/shortener.git
 cd shortener
 
 2️⃣ Install PHP Dependencies
