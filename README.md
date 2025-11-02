@@ -1,10 +1,10 @@
-🏫 URL Shortener System — Laravel + AngularJS
+## URL Shortener System — Laravel + AngularJS
 
 This project is a multi-company URL Shortener system built using Laravel 12 + and AngularJS 1.8 for the frontend.
 It includes authentication, authorization, company & user management, invitation handling, and secure short URL redirection.
 
-🚀 Features
-🧑‍💼 User & Role Management
+## Features
+User & Role Management
 
 Roles: SuperAdmin, Admin, Manager, Sales, Member
 
@@ -12,13 +12,13 @@ SuperAdmin → can create companies & invite Admins
 
 Admin → can invite Sales and Managers within their company
 
-🏢 Company Management
+Company Management
 
 Create and list multiple companies (unique name per company)
 
 Assign users to their respective companies
 
-🔗 URL Shortener
+URL Shortener
 
 Admin / Managers / Sales can create short URLs
 
@@ -32,7 +32,7 @@ Admin own company URL viewing permissions
 
 sales or manager themselves URL viewing permissions
 
-✉️ Invitation System
+Invitation System
 
 Invitation sent by Admins or SuperAdmins
 
@@ -40,7 +40,7 @@ Auto user creation upon invitation
 
 Tracks status: Pending, Accepted, Rejected
 
-🔐 Authentication
+Authentication
 
 Custom AngularJS login page
 
@@ -48,26 +48,27 @@ Laravel session-based authentication
 
 Redirects unauthorized users to /login
 
-⚙️ Tech Stack
+Tech Stack
 Component	Technology
 Backend	Laravel 11 / 12
 Frontend	AngularJS 1.8 + Blade
 Database	MySQL / SQLite
 Authentication	Laravel Auth (Session)
 Frontend Design	HTML / CSS / AngularJS
-🧩 Project Setup Guide
-1️⃣ Clone the Repository
+
+## Project Setup Guide
+1 Clone the Repository
 
 git clone https://github.com/ankitgoyal015-cmyk/shortener.git
 cd shortener
 
-2️⃣ Install PHP Dependencies
+2 Install PHP Dependencies
 
 Make sure you have Composer installed, then run:
 
 composer install
 
-4️⃣ Create Environment File
+3 Create Environment File
 
 Copy .env.example to .env
 
@@ -85,35 +86,35 @@ DB_DATABASE=shortener
 DB_USERNAME=root
 DB_PASSWORD=
 
-5️⃣ Generate Application Key
+5 Generate Application Key
 php artisan key:generate
 
-6️⃣ Run Database Migrations and Seeders
+6 Run Database Migrations and Seeders
 php artisan migrate --seed
 
 
-✅ This will:
+ This will:
 
 Create all tables
 
 Seed a SuperAdmin user (superadmin@example.com / password123)
 
-7️⃣ Start Local Development Server
+7 Start Local Development Server
 php artisan serve
 
 
 Project will run at:
-👉 http://localhost:8000
+ http://localhost:8000
 
 (or http://localhost/shortener
  if using XAMPP)
 
-🔑 Default Login Credentials
+ Default Login Credentials
 Role : SuperAdmin	
 Email : superadmin@example.com
 Password : password123
 
-🧠 Project Structure Overview
+## Project Structure Overview
 shortener/
 ├── app/
 │   ├── Http/
@@ -150,7 +151,7 @@ shortener/
 │
 └── README.md
 
-🌍 Public Short URL Redirects
+## Public Short URL Redirects
 
 Once a short URL is generated,
 the system creates a link like:
@@ -160,7 +161,7 @@ http://localhost/shortener/s/abc12345
 
 Anyone visiting that link is automatically redirected to the original long URL.
 
-🧪 Testing the Project
+## Testing the Project
 
 Register / Login as SuperAdmin
 
