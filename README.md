@@ -30,7 +30,7 @@ SuperAdmin all URL viewing permissions
 
 Admin own company URL viewing permissions
 
-sales or manager thenselves URL viewing permissions
+sales or manager themselves URL viewing permissions
 
 ✉️ Invitation System
 
